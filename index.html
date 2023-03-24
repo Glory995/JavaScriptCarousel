@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js" defer></script>
     <title>Carousel</title>
 
 
@@ -25,38 +27,7 @@
     </div>
 
 
-    <script>
-
-        myImages=[ "download1.jfif","download2.jfif", "download3.jfif", "download4.jfif", "download5.jfif", "download6.jfif"];
-
-        var currentImage=0;
-
-        document.getElementById("next").onclick= nextPhoto;
-
-        document.getElementById("previous").onclick= previousPhoto;
-
-        function nextPhoto(){
-            
-            currentImage++
-            if(currentImage >5){ currentImage=0; };
-            console.log(currentImage);
-            
-            
-            document.getElementById("images").src= myImages[currentImage]
-            
-        }
-
-        //comiting changes
-
-        function previousPhoto(){
-
-             currentImage= currentImage -1;
-             if(currentImage < 0){ currentImage=5; };
-             console.log(currentImage); 
-             document.getElementById("images").src= myImages[currentImage]
-
-        }
-    </script>
+    
     
 </body>
 </html>
